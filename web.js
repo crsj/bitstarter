@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-	var indexfile = "/home/ubuntu/week3/hw3ProgAssn/bitstarter/index.html";
+	var indexfile = "index.html";
 	var indexdata = fs.readFileSync(indexfile) + ' ';
 	//console.log("data " + __filename + "\n Wrote: " + indexdata);
   response.send(indexdata);
